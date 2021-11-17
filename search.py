@@ -39,7 +39,10 @@ def search_and_download(query, srcs):
         except:
             print ("convert num to int failed")
             continue
-        if num == 0 or num > 20:
+        if num > len(items):
+            print ("please input correct num between 1-%d" % (len(items)))
+            continue
+        if num == 0:
             sys.exit()
         print (items[num-1])
         client.download([items[num-1]])
