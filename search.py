@@ -20,7 +20,7 @@ def print_lines(lines):
 
 def search_and_download(query, srcs):
     client = musicdl.musicdl(config=config)
-    search_results = client.search("赵雷", srcs)
+    search_results = client.search(query, srcs)
     index = 1 
     items = []
     lines = []
