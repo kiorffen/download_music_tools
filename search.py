@@ -26,7 +26,7 @@ def search_and_download(query, srcs):
     lines = []
     for key, value in search_results.items():
         for item in value:
-            line = "|index:%d\t|singers:%s\t|songname:%s|" % (index, item["singers"], item["songname"])
+            line = "|source:%s\t|index:%d\t|singers:%s\t|songname:%s|" % (item["source"], index, item["singers"], item["songname"])
             lines.append(line)
             index = index+1
             items.append(item)
