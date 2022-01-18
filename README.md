@@ -3,7 +3,7 @@
 安装依赖
 
 ```
-pip install musicdl --upgrade
+pip install git+https://github.com/CharlesPikachu/musicdl.git@02003eaf48a2267a2b741661826f1139fca7cbe1 #使用固定版本
 pip install absl-py
 ```
 
