@@ -6,12 +6,14 @@ from musicdl import musicdl
 
 
 
-default_srcs = ['baiduFlac', 'kugou', 'kuwo', 'qq', 'qianqian', 'netease', 'migu', 'xiami', 'joox', 'yiting']
-config = {'logfilepath': 'musicdl.log', 'savedir': 'downloaded', 'search_size_per_source': 20, 'proxies': {}}
+#default_srcs = ['baiduFlac', 'kugou', 'kuwo', 'qq', 'qianqian', 'netease', 'migu', 'xiami', 'joox', 'yiting']
+default_srcs = ['kugou', 'kuwo', 'qqmusic', 'qianqian', 'fivesing', 'netease', 'migu', 'joox','yiting']
+#default_srcs = ['kugou', 'kuwo', 'qq', 'qianqian', 'netease', 'migu', 'xiami', 'joox', 'yiting']
+config = {'logfilepath': 'musicdl.log', 'savedir': 'downloaded', 'search_size_per_source': 5, 'proxies': {}}
 
 FLAGS = flags.FLAGS
 flags.DEFINE_string("src",
-        "baiduFlac,kugou,kuwo,qq,qianqian,netease,migu,xiami,joox,yiting", "输入目标站点")
+        "kugou,kuwo,qqmusic,qianqian,fivesing,netease,migu,joox,yiting", "输入目标站点")
 flags.DEFINE_string("query", "赵雷", "输入查询关键词")
 
 def print_lines(lines):
